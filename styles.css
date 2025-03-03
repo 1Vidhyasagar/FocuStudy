@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(253, 253, 227);
+    padding: 0.1rem;
+}
+
+.header-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight:bold;
+    color: rgb(68, 65, 65);
+    text-decoration: none;
+    gap:0.625rem;
+
+}
+.logo-icon{
+    height: 5.875rem;
+    width: 1.938rem;
+}
+
+.logo-text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav{
+    display: none;
+    gap: 1.5rem;
+
+}
+
+@media screen and (min-width: 768px) {
+    .nav{
+        display:flex;
+    }
+}
+.nav-link{
+    color:rgb(99, 98, 98);
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+
+.nav-link:hover{
+    color: rgb(104, 104, 213);
+}
+
+.contact-button{
+    display: none;
+    border: none;
+    border-radius: 0.375rem;
+    background-color:rgb(128, 128, 240);
+    color: white;
+    transform: all 0.1s;
+    padding: 0.75rem 1.5rem ;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+    .contact-button{
+        display:block;
+    }
+}
+
+.contact-button:hover{
+    background-color:rgb(95, 95, 244);
+}
+
+.menu-button{
+display: none;
+border: none;
+border-radius: 0.375rem;
+font-size: 1rem;
+font-weight: 600;
+    background-color: rgb(253, 253, 227);
+        padding: 0.5rem 1rem ;
+
+
+
+}
+
+@media screen and (max-width :768px) {
+    .menu-button{
+    display:block;
+}
+}
+
+.menu-icon{
+    height:1.5rem;
+    width: 1.5rem;
+}
